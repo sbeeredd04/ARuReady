@@ -80,6 +80,12 @@ header {
   color: #000; /* Set home text color to white */
 }
 
+.AR-tour { 
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+
 .btn {
   font-size: 1.2rem;
   padding: 1rem 2.5rem;
@@ -113,7 +119,7 @@ header {
       background-color: #000;
   }
 .Mentors { 
-  padding: 50px;
+  padding: 150px;
   text-align: left;
   display: flex;
   flex-direction: row-reverse;
@@ -188,22 +194,25 @@ header {
   padding: 50px;
   text-align: left;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   margin-top: 100px;
 }
 
 .Spaces-img {
-  width: 50%;
-  height: 30%;
-  border-radius: 50%;
+  width: 100%;
+  height: auto; /* Adjust the height automatically based on the image aspect ratio */
+  border-radius: 10%;
   border: 0px solid; /* Set spaces image border color */
-  margin-left: 20px;
+  margin-bottom: 20px; /* Add some space between the image and content */
+}
+
+.Spaces-content {
+  text-align: center;
 }
 
 .Spaces-title {
-  font-size: 88px;
+  font-size: 64px; /* Adjust font size as needed */
   color: #8C1D40; /* Set spaces title color */
 }
 
@@ -212,11 +221,365 @@ header {
   font-weight: 100;
   line-height: 1.5;
   color: #000; /* Set spaces text color to white */
+  margin-bottom: 20px; /* Add some space between the text and button */
 }
 
-.AR-container-spaces { 
+.AR-container-spaces {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.btn-spaces-ar {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #8C1D40; /* Set button background color */
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  margin-top: 24px;
+}
+
+.btn-spaces-ar:active {
+  scale: 0.92;
+}
+
+.btn-spaces-ar:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(140, 29, 64, 0.681) 0%, rgba(255, 198, 39, 0.873) 80%);
+  color: rgb(4, 4, 38);
+}
+
+
+/* style for funding section */ 
+/* ... Previous CSS Code ... */
+
+/* Style for funding section */ 
+.Funding {
+  background-color: #000;
+  padding: 250px; /* Increase padding to increase section height */
+  text-align: left;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.Funding-title { 
+  font-size: 64px; /* Adjust font size as needed */
+  color: #FFC627; /* Set spaces title color */
+  margin-bottom: 20px; /* Add margin to the title */
+}
+
+.Funding-content {
+  width: 100%;
+  padding: 20px; /* Add padding for content */
+  margin-left: 0;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 20px; /* Add margin to the content */
+}
+
+.btn-funding-ar { 
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #FFC627; /* Set button background color */
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  margin-top: 24px;
+  margin-right: 40px;
+}
+
+.btn-funding-ar:active {
+  scale: 0.92;
+}
+
+.btn-funding-ar:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(255, 198, 39, 0.681) 0%, rgba(140, 29, 64, 0.873) 80%);
+  color: rgb(4, 4, 38);
+}
+
+/* ... Rest of your CSS ... */
+
+/* 3D dollar tower loader made by: csozi | Website: www.csozi.hu*/
+
+.loader {
+  scale: 3;
+  height: 100px;
+  width: 40px;
+}
+
+.box {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+}
+
+.side-left {
+  position: absolute;
+  background-color: #4CAF50; /* Dollar green color */
+  width: 2px;
+  height: 5px;
+  transform: skew(0deg, -25deg);
+  top: 14px;
+  left: 10px;
+}
+
+.side-right {
+  position: absolute;
+  background-color: #4CAF50; /* Dollar green color */
+  width: 25px;
+  height: 1px;
+  transform: skew(0deg, 25deg);
+  top: 14px;
+  left: -9px;
+}
+
+.side-top {
+  position: absolute;
+  background-image: url('dollar-note.png'); /* Replace 'dollar-note.png' with your dollar note image */
+  background-size: cover;
+  width: 80px;
+  height: 36px; /* Adjust the height to fit your dollar note image */
+  rotate: 45deg;
+  transform: skew(-20deg, -20deg);
+}
+
+.box-1 {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+  animation: from-left 4s infinite;
+}
+
+/* Stack 2 */
+.box-2 {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+  animation: from-left 4s infinite;
+  animation-delay: 1s;
+}
+
+/* Stack 3 */
+.box-3 {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+  animation: from-left 4s infinite;
+  animation-delay: 2s;
+}
+
+/* Stack 4 */
+.box-4 {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+  animation: from-left 4s infinite;
+  animation-delay: 3s;
+}
+
+/* Stack 5 */
+.box-5 {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+  animation: from-left 4s infinite;
+  animation-delay: 4s;
+}
+
+/* Stack 6 */
+.box-6 {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+  animation: from-left 4s infinite;
+  animation-delay: 5s;
+}
+
+/* Stack 7 */
+.box-7 {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+  animation: from-left 4s infinite;
+  animation-delay: 6s;
+}
+
+/* Stack 8 */
+.box-8 {
+  position: relative;
+  opacity: 0;
+  left: 10px;
+  animation: from-left 4s infinite;
+  animation-delay: 7s;
+}.box-1 {
+  animation: from-left 4s infinite;
+}
+
+.box-2 {
+  animation: from-right 4s infinite;
+  animation-delay: 1s;
+}
+
+.box-3 {
+  animation: from-left 4s infinite;
+  animation-delay: 2s;
+}
+
+.box-4 {
+  animation: from-right 4s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes from-left {
+  0% {
+    z-index: 20;
+    opacity: 0;
+    translate: -20px -6px;
+  }
+
+  20% {
+    z-index: 10;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+
+  40% {
+    z-index: 9;
+    translate: 0px 4px;
+  }
+
+  60% {
+    z-index: 8;
+    translate: 0px 8px;
+  }
+
+  80% {
+    z-index: 7;
+    opacity: 1;
+    translate: 0px 12px;
+  }
+
+  100% {
+    z-index: 5;
+    translate: 0px 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes from-right {
+  0% {
+    z-index: 20;
+    opacity: 0;
+    translate: 20px -6px;
+  }
+
+  20% {
+    z-index: 10;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+
+  40% {
+    z-index: 9;
+    translate: 0px 4px;
+  }
+
+  60% {
+    z-index: 8;
+    translate: 0px 8px;
+  }
+
+  80% {
+    z-index: 7;
+    opacity: 1;
+    translate: 0px 12px;
+  }
+
+  100% {
+    z-index: 5;
+    translate: 0px 30px;
+    opacity: 0;
+  }
+}
+
+/* Style for Network section */
+.Network {
+  background-color: #FFF;
+  padding: 50px;
+  text-align: left;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.Network-content {
+  width: 100%;
+  border-radius: 50%;
+  border: 0px solid; /* Set home image border color */
+  margin-left: 0;
+  font-size: 30px;
+  color: #fff;
+}
+
+.Network-title {
+  font-size: 64px; /* Adjust font size as needed */
+  color: #8C1D40; /* Set spaces title color */
+  margin-bottom: 20px; /* Add margin to the title */
+}
+
+.Network-text {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #000; /* Set spaces text color to white */
+  margin-bottom: 20px; /* Add some space between the text and button */
+}
+
+.btn-network-ar {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #8C1D40; /* Set button background color */
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  margin-top: 24px;
+  margin-right: 40px;
+}
+
+.btn-network-ar:active {
+  scale: 0.92;
+}
+
+.btn-network-ar:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(140, 29, 64, 0.681) 0%, rgba(255, 198, 39, 0.873) 80%);
+  color: rgb(4, 4, 38);
 }
