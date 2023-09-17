@@ -34,6 +34,7 @@ header {
 .navbar {
   list-style-type: none;
   display: flex;
+  margin-right: 20px;
 }
 
 .navbar li {
