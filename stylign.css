@@ -1,109 +1,222 @@
 /* Reset default margin and padding for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Set the background to black */
 body {
-    background-color: #FFF;
-    color: #fff; /* Set text color to white */
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFF;
+  color: #fff; /* Set text color to white */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Style the header with the Venture Devils logo and navigation bar */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #000; /* Set the header background color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000; /* Set the header background color */
 }
 
 .logo {
-    text-decoration: none;
-    font-size: 32px;
-    color: #FFC627; /* Set logo text color */
+  text-decoration: none;
+  font-size: 32px;
+  color: #FFC627; /* Set logo text color */
 }
 
 .Devils {
-    color: #8C1D40; /* Set the "Devils" text color to white */
+  color: #8C1D40; /* Set the "Devils" text color to white */
 }
 
 .navbar {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .navbar li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .navbar a {
-    text-decoration: none;
-    font-size: 24px;
-    color: #FFC627; /* Set navigation link color */
+  text-decoration: none;
+  font-size: 24px;
+  color: #FFC627; /* Set navigation link color */
 }
 
 .navbar a:hover {
-    color: #8C1D40; /* Set navigation link hover color */
+  color: #8C1D40; /* Set navigation link hover color */
 }
 /* Style the main Home section image on the right and text on the left*/
 .Home {
-    padding: 50px;
-    text-align: left;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
+  padding: 50px;
+  text-align: left;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .home-img {
-    width: 50%;
-    height: 30%;
-    border-radius: 50%;
-    border: 0px solid; /* Set home image border color */
-    margin-left: 20px;
+  width: 50%;
+  height: 30%;
+  border-radius: 50%;
+  border: 0px solid; /* Set home image border color */
+  margin-left: 20px;
 }
 
 .home-title {
-    font-size: 88px;
-    color: #8C1D40; /* Set home title color */
+  font-size: 88px;
+  color: #8C1D40; /* Set home title color */
 }
 
 .home-text {
-    font-size: 32px;
-    font-weight: 100;
-    line-height: 1.5;
-    color: #000; /* Set home text color to white */
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #000; /* Set home text color to white */
 }
 
 .btn {
-    font-size: 1.2rem;
-    padding: 1rem 2.5rem;
-    border: none;
-    outline: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: #8C1D40; /* Set button background color */
-    color: rgb(234, 234, 234);
-    font-weight: 700;
-    transition: 0.6s;
-    box-shadow: 0px 0px 60px #1f4c65;
-    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
-    margin-top: 24px;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #8C1D40; /* Set button background color */
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  margin-top: 24px;
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(140, 29, 64, 0.681) 0%, rgba(255, 198, 39, 0.873) 70%);
+  color: rgb(4, 4, 38);
+}
+
+/* style the mentors section right text left image */ 
+/* black background for the mentors section*/ 
+  .Mentors {
+      background-color: #000;
   }
-  
-  .btn:active {
-    scale: 0.92;
-  }
-  
-  .btn:hover {
-    background: rgb(2,29,78);
-    background: linear-gradient(270deg, rgba(140, 29, 64, 0.681) 0%, rgba(255, 198, 39, 0.873) 70%);
-    color: rgb(4, 4, 38);
-  }
-  
+.Mentors { 
+  padding: 50px;
+  text-align: left;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Mentors-content { 
+  width: 100%;
+  border-radius: 50%;
+  border: 0px solid; /* Set home image border color */
+  margin-left: 0;
+  font-size: 30px;
+  color: #FFC627
+}
+
+.Mentors-text { 
+  width: 100%;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #fff; /* Set home text color to white */
+  margin-right: 100px;
+}
+
+/*style for image and button in this container and button is below the image */
+.AR-container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mentors-img { 
+  margin-right: 100px;
+  width: 50%;
+  height: 40%;
+  border-radius: 10%
+}
+
+.btn-mentor-ar {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #FFC627; /* Set button background color */
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  margin-top: 24px;
+  margin-right: 40px;
+}
+
+.btn-mentor-ar:active {
+  scale: 0.92;
+}
+
+.btn-mentor-ar:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(255, 198, 39, 0.681) 0%, rgba(140, 29, 64, 0.873) 80%);
+  color: rgb(4, 4, 38);
+}
+
+
+.Spaces {
+  padding: 50px;
+  text-align: left;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.Spaces-img {
+  width: 50%;
+  height: 30%;
+  border-radius: 50%;
+  border: 0px solid; /* Set spaces image border color */
+  margin-left: 20px;
+}
+
+.Spaces-title {
+  font-size: 88px;
+  color: #8C1D40; /* Set spaces title color */
+}
+
+.Spaces-text {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #000; /* Set spaces text color to white */
+}
+
+.AR-container-spaces { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
